@@ -27,14 +27,7 @@ This project implements a searchable product list with infinite scrolling using 
 4. Run Project:
    ```bash
    npm run dev or yarn dev
-
-
-## Running the Project
-1. **Start the development server**:
-    ```bash
-    npm run dev
-    ```
-2. **Open your browser** and go to `http://localhost:5173` to see the application in action.
+ **Open your browser** and go to `http://localhost:5173` to see the application in action.
 
 
 ## API Details
