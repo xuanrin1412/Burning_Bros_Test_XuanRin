@@ -1,50 +1,54 @@
-# React + TypeScript + Vite
+# BurningBros Test - Le Thi Xuan Rin
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo URL
+https://burning-bros-test-xuan-rin.vercel.app/
 
-Currently, two official plugins are available:
+# Product List with Infinite Scrolling and Search
+This project implements a searchable product list with infinite scrolling using React and TypeScript, fetching data from the DummyJSON API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- **Infinite Scrolling**: Automatically loads more products as you scroll down.
+- **Search Functionality**: Filter products based on search queries.
+- **Responsive Design**: Optimized for various screen sizes.
 
-## Expanding the ESLint configuration
+## Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/xuanrin1412/Burning_Bros_Test_XuanRin.git
+   
+2. Navigate into the project directory:
+   ```bash
+   cd Burning_Bros_Test_XuanRin
+   
+3. Install the dependencies:
+   ```bash
+   npm install or yarn install
+   
+4. Run Project:
+   ```bash
+   npm run dev or yarn dev
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Running the Project
+1. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+2. **Open your browser** and go to `http://localhost:5173` to see the application in action.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## API Details
+The project uses the DummyJSON API to fetch product data. The endpoints used are:
+- **Search Products**: `https://dummyjson.com/products/search?q=${searchValue}&limit=${limit}&skip=${skip}`
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Troubleshooting
+If you encounter issues with the fetch API not working correctly based on the length of the `searchValue`, ensure that:
+- The API endpoint is correct and supports search queries.
+- The request payload is correctly formatted.
+- There are no issues with API rate limits or server responses.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Acknowledgements
+- [DummyJSON](https://dummyjson.com) for providing the API used in this project.
+- [React](https://reactjs.org) and [TypeScript](https://www.typescriptlang.org) for the frameworks and tools used.
+
+
