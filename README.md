@@ -41,12 +41,6 @@ This project implements a searchable product list with infinite scrolling using 
 The project uses the DummyJSON API to fetch product data. The endpoints used are:
 - **Search Products**: `https://dummyjson.com/products/search?q=${searchValue}&limit=${limit}&skip=${skip}`
 
-## Troubleshooting
-If you encounter issues with the fetch API not working correctly based on the length of the `searchValue`, ensure that:
-- The API endpoint is correct and supports search queries.
-- The request payload is correctly formatted.
-- There are no issues with API rate limits or server responses.
-
 ## Acknowledgements
 - [DummyJSON](https://dummyjson.com) for providing the API used in this project.
 - [React](https://reactjs.org) and [TypeScript](https://www.typescriptlang.org) for the frameworks and tools used.
